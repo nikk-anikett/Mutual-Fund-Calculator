@@ -8,85 +8,130 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div class="f1">
-      <div class="form-row">
-        <div>
-          <label for="sliderValue" class="form-label">Amount : &nbsp;</label>
-          <input
-            type="text"
-            id="sliderValue"
-            class="amount-input"
-            value="500"
-          /><span>rs &nbsp;&nbsp;</span>
+
+    
+    <div class="bg-[beige] rounded-[2%] p-[0.8%] items-center">
+      <div class="flex flex-row w-[1100px] h-[100px] gap-5">
+        <div class="flex flex-col w-[300px] h-[200px] items-center gap-5">
+          <div>
+            <label for="sliderValue" class="form-label">Amount : &nbsp;</label>
+            <input
+              type="text"
+              id="sliderValue"
+              class="amount-input"
+              value="3000"
+            /><span>rs</span>
+          </div>
+          <div>
+            <input
+              type="range"
+              min="500"
+              max="20000000"
+              value="3000"
+              class="slider"
+              id="myRange"
+            />
+          </div>
         </div>
-        <div>
-          <input
-            type="range"
-            min="500"
-            max="200000"
-            value="500"
-            class="slider"
-            id="myRange"
-          />
+
+        <div class="flex flex-col w-[300px] h-[200px] items-center gap-5">
+          <div>
+            <label for="years" class="form-label">Year :&nbsp;</label>
+            <input type="text" id="years" class="amount-input" />
+            <span>years</span>
+          </div>
+          <div>
+            <input
+              type="range"
+              min="500"
+              max="200000"
+              value="500"
+              class="slider"
+              id="myRange"
+            />
+          </div>
+        </div>
+
+        <div class="flex flex-col w-[250px] h-[200px] items-center gap-5">
+          <div>
+            <label for="ExReturn" class="form-label"
+              >Expected return :&nbsp;</label
+            >
+            <input type="text" id="ExReturn" class="amount-inputER" />
+            <span>%</span>
+          </div>
+          <div>
+            <input
+              type="range"
+              min="500"
+              max="200000"
+              value="500"
+              class="sliderPer"
+              id="myRange"
+            />
+          </div>
+        </div>
+
+        <div class="flex flex-col w-[150px] h-[200px] items-center gap-5">
+          <div>
+            <label for="Inflation" class="form-label">Inflation :&nbsp;</label>
+            <input type="text" id="Inflation" class="amount-inputER" />
+            <span>%</span>
+          </div>
+          <div>
+            <input
+              type="range"
+              min="500"
+              max="200000"
+              value="500"
+              class="sliderIn"
+              id="myRange"
+            />
+          </div>
         </div>
       </div>
 
-      <div class="form-row">
-        <div>
-          <label for="years" class="form-label">Year :&nbsp;</label>
-          <input type="text" id="years" class="amount-input" />
-          <span>years &nbsp;&nbsp;</span>
-        </div>
-        <div>
-          <input
-            type="range"
-            min="500"
-            max="200000"
-            value="500"
-            class="slider"
-            id="myRange"
-          />
-        </div>
-      </div>
+      <div class="flex flex-row w-[1100px] h-[200px] bg-[white]">
+        <div class="flex flex-col w-[550px] h-[180px]  p-[0.8%] gap-5">
+          <div>
+            <label for="Expense Ratio" > Expense Ratio : &nbsp;</label>
+            <span id="expenseRatio"></span>
+          </div>
+          <div>
+            <label for="Invested Amount" > Invested Amount : &nbsp;</label>
+            <span id="investedAmount"></span>
+          </div>
+          <div>
+            <label for="Investment Gain" > Investment Gain : &nbsp;</label>
+            <span id="investmentGain"></span>
+          </div>
+          <div>
+            <label for="Total Amount" > Total Amount : &nbsp;</label>
+            <span id="totalAmount"></span>
+          </div>
 
-      <div class="form-rowP">
-        <div>
-          <label for="ExReturn" class="form-label"
-            >Expected return :&nbsp;</label
-          >
-          <input type="text" id="ExReturn" class="amount-inputER" />
-          <span>% &nbsp;&nbsp;</span>
         </div>
-        <div>
-          <input
-            type="range"
-            min="500"
-            max="200000"
-            value="500"
-            class="sliderPer"
-            id="myRange"
-          />
-        </div>
-      </div>
-      <div class="form-rowP">
-        <div>
-          <label for="Inflation" class="form-label">Inflation :&nbsp;</label>
-          <input type="text" id="Inflation" class="amount-inputER" />
-          <span>% &nbsp;&nbsp;</span>
-        </div>
-        <div>
-          <input
-            type="range"
-            min="500"
-            max="200000"
-            value="500"
-            class="sliderPer"
-            id="myRange"
-          />
+        <div class="flex flex-col w-[550px] h-[180px] p-[0.8%] gap-5">
+          <div>
+            <label for="Inflation" >Amount after Inflation : &nbsp;</label>
+            <span id="Inflation"></span>
+          </div>
+          <div>
+            <label for="Invested Amount" > Invested Amount : &nbsp;</label>
+            <span id="investedAmount"></span>
+          </div>
+          <div>
+            <label for="Exit Ratio" > Exit Ratio : &nbsp;</label>
+            <span id="exitRatio"></span>
+          </div>
+          <div>
+            <label for="Long Term Capital Gain Tax" > Long Term Capital Gain Tax : &nbsp;</label>
+            <span id="totalAmount"></span>
+          </div>
         </div>
       </div>
     </div>
+
     <script src="index.js"></script>
   </body>
 </html>
-
