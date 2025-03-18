@@ -11,7 +11,7 @@ console.log(fv);
 const slider = document.getElementById("myRange");
 const sliderValue = document.getElementById("sliderValue");
 const sliderDisplay = document.getElementById("sliderDisplay");
-
+document.getElementById("expenseRatio").textContent = "0.45 - 0.75";
 // Update both the textbox and the span when slider is moved
 slider.addEventListener("input", function () {
   sliderValue.value = slider.value; // Update input field
@@ -26,4 +26,3 @@ sliderValue.addEventListener("input", function () {
     sliderDisplay.textContent = newValue;
   }
 });
-
