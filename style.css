@@ -11,39 +11,9 @@ body {
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.f1 {
-  display: flex;
-  flex-direction: row;
-  width: 1100px;
-  height: 600px;
-  background-color: beige;
-  border-radius: 2%;
-  padding: 0.8%;
-  gap: 20px;
-}
-
-.form-row {
-  display: flex;
-  margin-bottom: 15px;
-  gap: 20px;
-  width: 300px;
-  height: 200px;
-  /* justify-content: center;  */
-  flex-direction: column;
-}
-
-
-.form-rowP {
-  display: flex;
-  margin-bottom: 15px;
-  gap: 20px;
-  width: 200px;
-  height: 200px;
-  /* justify-content: center;  */
-  flex-direction: column;
+  font-weight: bold; font-size: 16px; 
+  font-family: proxima-nova-semibold, sans-serif; 
+  color: black;
 }
 
 
@@ -71,9 +41,8 @@ body {
 }
 
 .form-label {
-  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 350;
-  font-weight:525;
+  font-weight: bold; font-size: 16px; 
+  font-family: proxima-nova-semibold, sans-serif; 
   color: #666;
 }
 
@@ -83,8 +52,15 @@ body {
 
 .slider{
   width: 240px;
+  height: 5px
 }
 .sliderPer{
   width: 180px;
+  height: 5px
+}
+.sliderIn{
+  width: 123px;
+  height: 5px
 }
 
+ 
